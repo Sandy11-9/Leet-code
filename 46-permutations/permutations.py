@@ -11,7 +11,7 @@ class Solution(object):
 
     def find(self,li,ans,nums):
         if(len(ans)==len(nums)):
-            li.append(ans[:])
+            li.append(list(ans))
             return
 
 
