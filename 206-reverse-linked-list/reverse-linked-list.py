@@ -8,7 +8,6 @@ class Solution(object):
         """
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
-        """
         temp = head
         st=[]
         while(temp!=None):
@@ -19,4 +18,15 @@ class Solution(object):
             temp.val=st.pop()
             temp=temp.next
         return head
+        """
+
+        temp=head
+        prev=None
+        while(temp!=None):
+            nex=temp.next
+            temp.next=prev
+            prev=temp
+            temp=nex
+        return prev
+            
         
