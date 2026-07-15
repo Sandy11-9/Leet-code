@@ -3,7 +3,6 @@ class Solution(object):
         """
         :type n: int
         :rtype: int
-        """
         sum_o=0
         sum_e=0
         for i in range(1,n*2+1):
@@ -17,4 +16,6 @@ class Solution(object):
             sum_e=sum_o % sum_e
             sum_o=temp
         return sum_o
+        """
+        return n
         
